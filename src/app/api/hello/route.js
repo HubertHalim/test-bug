@@ -4,6 +4,8 @@ export async function GET(request) {
   return new Response('Hello, Next.js!')
 }
 
+export const config = { runtime: 'experimental-edge' }
+
 export async function POST(request) {
 
   try {
